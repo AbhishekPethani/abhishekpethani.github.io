@@ -44,7 +44,7 @@ class Particle {
     let particles = [];
     
     function setup() {
-      var canvas = createCanvas(windowWidth, windowHeight);
+      var canvas = createCanvas(screen.width, screen.height);
       canvas.position(0,0);
       canvas.style('display', 'block');
       canvas.style('z-index', '-1');
@@ -55,7 +55,7 @@ class Particle {
 
     // create resized canvas 
     function windowResized() {
-      resizeCanvas(windowWidth, windowHeight);
+      resizeCanvas(screen.width, screen.height);
     }
     
     function draw() {

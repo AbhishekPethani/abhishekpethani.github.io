@@ -3,22 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Abhishek Pethani</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
     <!-- BEGIN NAVBAR -->
-    <div class="navbar">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>        
+        <li>
+          <a href="#contact">Contact</a>
+        </li>       
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
     <!-- END NAVBAR -->
 
     <div class="container">
@@ -27,7 +49,7 @@
         <div class="jumbotron-text">
             <h1>Abhishek Pethani</h1>
             <p>Assistant System Engineer at TCS, Mumbai, India.</p>
-          </div>
+        </div>
         <div class="jumbotron-social">
           <ul class="ul-social">
             <li class="li-social-links">
@@ -75,25 +97,31 @@
       <!-- BEGIN EXPERIENCE -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="July 2019 – Present">
-	      		<h3>Tata Consultancy Services</h3>
-	            <h4>Assistant System Engineer</h4>
-	            <ul>
-	            	<li><p> Currently working as L1 Infrastructure Support Engineer.</p></li>
-	            	<li><p>Had undergone through internal training on Java, Sql, and Python.</p></li>
-	            </ul>	    
-            </div>
-        	<div data-date="May 2018 - June 2018" class="vtimeline-content">
-	      		<h3 style="text-align: center;">Spider Technology</h3>
-	            <h4>Software Developer Intern</h4>
-	            <ul>
-	            	<li><p> Developed a Software for retail shop business for managing their products using C#.net </p></li>
-	            </ul>
-            </div>
+      <div class="side-content"></div>
+        <div class="main-content">
+          <div class="content-header">
+            <a class="anchor" name="about"></a>
+            <h2>Experience</h2>
+          </div>
+          <div id="experience-timeline">
+              <div data-date="July 2019 – Present">
+              <h3>Tata Consultancy Services</h3>
+                <h4>Assistant System Engineer</h4>
+                <ul>
+                  <li><p> Currently working as L1 Infrastructure Support Engineer.</p></li>
+                  <li><p>Had undergone through internal training on Java, Sql, and Python.</p></li>
+                </ul>	    
+              </div>
+              <div data-date="May 2018 - June 2018" class="vtimeline-content">
+                <h3 style="text-align: center;">Spider Technology</h3>
+                  <h4>Software Developer Intern</h4>
+                  <ul>
+                    <li><p> Developed a Software for retail shop business for managing their products using C#.net </p></li>
+                  </ul>
+              </div>
+          </div>
         </div>
-    </div>
+      </div>
     <!-- END EXPERIENCE   -->
 
       <!-- BEGIN EDUCATION  -->
@@ -108,7 +136,7 @@
             <!-- EDUCATION 1  -->
             <div class="card-education">
               <div class="card-header">
-                <h4 style="font-weight: bold;">Faculty of Engineering Technology and Research - Bardoli, Gujarat, India. <span class="job-title">August 2015 - May 2019</span></h4> 
+                <h4>Faculty of Engineering Technology and Research - Bardoli, Gujarat, India. </h4><span class="job-title">August 2015 - May 2019</span> 
               </div>
               <div class="card-content">
                 <ul>
@@ -119,9 +147,9 @@
             </div>
             
             <!-- EDUCATION 2  -->
-            <div class="card-education">
+            <div class="card-education" style="margin-bottom: 0px;">
               <div class="card-header">
-                <h4 style="font-weight: bold;">Samarpan Techno School - Surat, Gujarat, India. <span class="job-title">July 2013 - April 2015</span></h4>
+                <h4>Samarpan Techno School - Surat, Gujarat, India. </h4> <span class="job-title">July 2013 - April 2015</span>
               </div>
               <div class="card-content">
                 <ul>
@@ -205,9 +233,8 @@
             <h2 class="white-text">Contact Me</h2>
           </div>
           <div class="contact content-body">
-            <form method="post" action="#" >
-                <input type="hidden" id="subject" name="_subject" value="Contact request from personal website" />
-                <input type="email" id="replyto" name="_replyto" placeholder="Your email" required>
+            <form method="post"  action="mailto:https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhishekpethani17@gmail.com?subject=Contact request" enctype="text/plain">
+                <input type="email" id="reply to" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" id="message" placeholder="Your message" required></textarea>
                 <button type="submit" >Send</button>
             </form>
@@ -221,7 +248,6 @@
       <div class="row">
         <div class="side-content"></div>
         <div class="main-footer">
-          <!-- <div class="content-header"></div> -->
           <div id="up-arrow">
           		<span><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></span>
           </div>
@@ -235,23 +261,22 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script src="js/particles sketch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/particles sketch.js"></script>
     <script src="js/createTimeLine.js"></script>
-    <script >
-   	$(window).scroll(function() {
-   		var scrPos = $(this).scrollTop();
-  		 $('#myDiv').html('your Scroll Position is' + scrPos);
-  		 if ($(this).scrollTop()>300 && $(this).scrollTop()<800)
-	     {
-	        $('.download').fadeIn();
-	     }
-	    else
-	     {
-	      $('.download').fadeOut();
-	     }
-   	});
-   	
+    <script src="js/index.js"></script>
+    <script>
+      $(window).scroll(function() {
+        var scrPos = $(this).scrollTop();
+        if ($(this).scrollTop()>300 && $(this).scrollTop()<800)
+        {
+            $('.download').fadeIn();
+        }
+        else
+        {
+          $('.download').fadeOut();
+        }
+      });
    	</script>
     </body>
 </html>

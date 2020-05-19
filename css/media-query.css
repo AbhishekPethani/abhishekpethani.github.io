@@ -1,0 +1,113 @@
+@media screen and (max-width:760px){
+    .navbar{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        width:50%;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        /* transform: translateX(100%); */
+        transition: transform 0.5s ease-in; 
+        z-index: -1;
+
+    }
+
+    .navbar li{ opacity: 0; } 
+
+    .burger{
+        margin-left: 75%;
+        display: block;
+    }
+
+    .navbar-active{
+        transform: translateX(0%);
+        z-index: 0;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .jumbotron-text { font-size: 1em; }
+    
+    .social { font-size: 1.5em; }
+
+    .side-content { flex: 0 0 9%; }
+    
+    .main-content {
+        flex: 0 0 82%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    h2 { font-size: 1.6rem; }
+
+    .btn-rounded-white { display: none; }
+
+    #experience-timeline:before { left: 14px; } 
+
+    #experience-timeline:after {
+        top: 100%;
+        left: 14px;
+    }
+    .vtimeline-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 0px; 
+    }
+    .vtimeline-icon i {
+        font-size: 1.5rem;
+        margin-top: 3px;
+    }
+    .vtimeline-date {
+        font-size: 0.8rem;
+        text-align: right;
+        margin-top: 0px;
+        padding-right: 10px;
+        width: 100%;
+    }  
+    .vtimeline-content {
+        margin: 0px 0px 0px 20px;
+        padding-top: 30px;
+        padding-left: 20px;
+        border-radius: 3px;
+        text-align: left;
+    } 
+    .vtimeline-content h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    .vtimeline-content h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0 0 15px 10px;
+    }
+
+    .card-header h4{ font-size: 0.9rem; }
+
+    .card-content li{ font-size:0.9rem; }
+
+    .li-skills { font-size: 0.9rem; }
+
+    .main-footer { flex: 0 0 82%; }    
+}
+
+@media (min-width: 40rem) {
+    .cards_item { width: 50%; }
+}
+
+@media (min-width: 56rem) {
+    .cards_item { width: 33.3333%; }
+}
+
